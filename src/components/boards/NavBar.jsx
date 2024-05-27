@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import LOGOIMG from "./../../assets/logo.png";
 import { AiOutlinePlus } from "react-icons/ai";
 import CreateNewBoard from "./CreateNewBoard";
 import { setSearchKeyword } from "../../slices/PostSlice";
@@ -27,7 +26,6 @@ const NavBar = () => {
     <>
       <div className="flex sm:flex-row h-16 items-center justify-between mr-4">
         <div className="flex flex-shrink-0 items-center">
-          <img className="h-8 w-auto ml-12" src={LOGOIMG} alt="Your Company" />
         </div>
         <div className="flex justify-between">
 

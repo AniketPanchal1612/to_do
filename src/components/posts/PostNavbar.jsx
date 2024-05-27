@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { BsHeart } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { FaRegBookmark } from "react-icons/fa";
-import tIMG from "./../../assets/tIMG.png";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { MdArrowBackIos } from "react-icons/md";
@@ -39,12 +38,7 @@ const PostNavbar = ({title}) => {
           <div onClick={() => navigation(-1)}>
             <MdArrowBackIos className="cursor-pointer" />
           </div>
-          <Link to='/'
-            
-            className="items-center cursor-pointer hidden sm:block"
-          >
-            <img className="h-8 w-auto" src={tIMG} alt="Your Company" />
-          </Link>
+          
           <h3 className="ml-2 font-bold">{title? title : selectedBoard.boardName}</h3>
         </div>
        
